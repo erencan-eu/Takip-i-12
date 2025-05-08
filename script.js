@@ -1,11 +1,11 @@
 
 function checkPassword() {
     var pass = document.getElementById("password").value;
-    if (pass === "takipçi123") {
+    if (pass === "hile2025") {
         document.getElementById("login-screen").style.display = "none";
         document.getElementById("main-panel").style.display = "block";
     } else {
-        alert("Hatalı şifre!");
+        alert("ŞİFRE HATALI LÜTFEN TEKRAR DENEYİNİZ!");
     }
 }
 
@@ -15,7 +15,7 @@ document.getElementById("hamburger").addEventListener("click", function () {
 });
 
 function showEren() {
-    document.getElementById("eren-panel").style.display = "block";
+    document.getElementById("-panel").style.display = "block";
     document.getElementById("cevap-login").style.display = "none";
     document.getElementById("cevaplar-panel").style.display = "none";
 }
